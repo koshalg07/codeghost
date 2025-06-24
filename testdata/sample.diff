@@ -1,0 +1,20 @@
+diff --git a/internal/payment/payment.go b/internal/payment/payment.go
+index e69de29..b6fc4c5 100644
+--- a/internal/payment/payment.go
++++ b/internal/payment/payment.go
+@@ func ProcessPayment(orderID string) error {
++    if orderID == "" {
++        return fmt.Errorf("orderID cannot be empty")
++    }
+
+     // Simulate payment processing
+-    err := externalService.Call("charge", orderID)
++    err := externalService.Call("charge", orderID)
+     if err != nil {
+-        return err
++        log.Printf("payment failed: %v", err)
++        return fmt.Errorf("payment failed: %w", err)
+     }
+
+     return nil
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-06-25T10:42:11Z",
+    "level": "INFO",
+    "message": "starting payment for order 123"
+  },
+  {
+    "timestamp": "2025-06-25T10:42:12Z",
+    "level": "ERROR",
+    "message": "payment failed: nil pointer dereference"
+  },
+  {
+    "timestamp": "2025-06-25T10:42:13Z",
+    "level": "WARN",
+    "message": "retrying failed payment for order 123"
+  },
+  {
+    "timestamp": "2025-06-25T10:42:14Z",
+    "level": "ERROR",
+    "message": "payment failed: payment failed: context deadline exceeded"
+  }
+]
